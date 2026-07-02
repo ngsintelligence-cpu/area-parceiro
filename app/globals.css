@@ -39,8 +39,20 @@ input, textarea, select {
   font-family: inherit;
 }
 
-/* focus ring */
-*:focus-visible {
+/* focus ring — apenas elementos interativos */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
   outline: 2px solid #FFB800;
   outline-offset: 2px;
+}
+
+div:focus-visible,
+main:focus-visible,
+aside:focus-visible,
+section:focus-visible {
+  outline: none;
 }

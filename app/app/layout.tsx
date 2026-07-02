@@ -20,7 +20,7 @@ export default async function ParceiroLayout({ children }: { children: React.Rea
   }
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", minHeight: "100vh", background: "#06080F" }}>
       <Sidebar variant="parceiro" userName={userName} userEmail={userEmail} />
       <main style={{
         marginLeft: 240, flex: 1, minHeight: "100vh",
