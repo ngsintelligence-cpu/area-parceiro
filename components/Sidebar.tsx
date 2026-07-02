@@ -47,21 +47,19 @@ export default function Sidebar({ variant, userName = "Parceiro", userEmail = "p
       }}
     >
       {/* Logo */}
-      <div style={{ padding: "24px 20px 20px", borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{
-            width: 36, height: 36, borderRadius: 10, flexShrink: 0,
-            background: "linear-gradient(135deg, #FFB800, #FF8A00)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: 18, boxShadow: "0 6px 16px rgba(255,138,0,.30)",
-          }}>☀️</div>
-          <div>
-            <div style={{ fontSize: 12, fontWeight: 800, color: "#EAEEF7", letterSpacing: "-0.2px" }}>
-              Power Mais
-            </div>
-            <div style={{ fontSize: 10, color: "#7A839A", marginTop: 1 }}>{title}</div>
-          </div>
-        </div>
+      <div style={{ padding: "16px 0 16px", borderBottom: "1px solid rgba(255,255,255,0.07)", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <img
+          src="/logo.jpg"
+          alt="Vine Grupo"
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            mixBlendMode: "screen",
+            filter: "brightness(1.4) contrast(1.2)",
+          }}
+        />
+        <div style={{ fontSize: 10, color: "#7A839A", marginTop: 6 }}>{title}</div>
       </div>
 
       {/* Nav */}
